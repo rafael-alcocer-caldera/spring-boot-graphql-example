@@ -1,0 +1,6 @@
+rafael\alcocer\caldera\spring\boot\graphql\service\ThingService.class
+rafael\alcocer\caldera\spring\boot\graphql\service\ThingServiceImpl.class
+rafael\alcocer\caldera\spring\boot\graphql\Application.class
+rafael\alcocer\caldera\spring\boot\graphql\model\Thing.class
+rafael\alcocer\caldera\spring\boot\graphql\resolvers\ThingMutationResolver.class
+rafael\alcocer\caldera\spring\boot\graphql\resolvers\ThingQueryResolver.class

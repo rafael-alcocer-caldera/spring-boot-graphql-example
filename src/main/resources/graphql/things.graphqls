@@ -1,0 +1,19 @@
+input ThingInput {
+    id: Int!
+    name: String!
+    description: String!
+}
+
+type Thing {
+    id: Int!
+    name: String!
+    description: String!
+}
+
+type Query {
+    thing(name:String) : Thing;
+}
+
+type Mutation {
+    createThing(input: ThingInput) : Thing;
+}

@@ -1,0 +1,62 @@
+POST
+http://localhost:8080/graphql
+
+QUERY
+-----
+mutation createThing($req: ThingInput) {
+        createThing(input: $req) {
+          id
+          name
+          description
+      }
+}
+
+GRAPHQL VARIABLES
+-----------------
+{
+	"req": {
+	    "id": 100
+		"name": "TV",
+		"description": "LG Nano"
+	}
+}
+
+Response
+--------
+{
+    "data": {
+        "createThing": {
+            "id": 100
+            "name": "TV",
+            "description": "LG Nano"
+        }
+    }
+}
+
+---------------------------------------------------------
+
+POST
+http://localhost:8080/graphql
+
+QUERY
+-----
+query {
+    thing(name:"TV")  {
+        id
+        name
+        description
+    }
+}
+
+
+Response:
+---------
+{
+    "data": {
+        "thing": {
+            "id": "100",
+            "name": "TV",
+            "description": "LG Nano"
+        }
+    }
+}
